@@ -1,0 +1,52 @@
+<!--Ahmad Zain Mahmud-->
+<!--121140232-->
+<!--RB-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Angka 1</label>
+    <input type="text" placeholder="0" id="angka1">
+    <br>
+    <br>
+    <label for="">Angka 2</label>
+    <input type="text" placeholder="0" id="angka2">
+    <br>
+    <br>
+    <label for="">Hasil</label>
+    <input type="text" id="hasil">
+
+    <button onclick="ftambah()">Tambah (+)</button>
+    <button onclick="fkurang()">Kurang (-)</button>
+    <button onclick="fkali()">Kali (x)</button>
+    <button onclick="fbagi()">Bagi (:)</button>
+
+    <script>
+        var angka1 = document.getElementById("angka1");
+        var angka2 = document.getElementById("angka2");
+        var hasil = document.getElementById("hasil");
+
+        function ftambah(){
+            hasil.value = Number(angka1.value) + Number(angka2.value);
+        }
+
+        function fkurang(){
+            hasil.value = Number(angka1.value) - Number(angka2.value);
+        }
+
+        function fkali(){
+            hasil.value = Number(angka1.value) * Number(angka2.value);
+        }
+
+        function fbagi(){
+            hasil.value = Number(angka1.value) / Number(angka2.value);
+        }
+
+    </script>
+</body>
+</html>
